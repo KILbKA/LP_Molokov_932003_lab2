@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор паролей</title>
+</head>
+<body>
+    <h1>Генератор паролей</h1>
+    <form id="passwordGeneratorForm">
+        <label for="length">Длина пароля:</label>
+        <input type="number" id="length" min="1" max="128" required>
+        
+        <label for="sets">Наборы символов:</label>
+        <select id="sets">
+            <option value="numbers">Цифры</option>
+            <option value="letters">Буквы</option>
+            <option value="symbols">Символы</option>
+        </select>
+        
+        <label for="quantity">Количество паролей:</label>
+        <input type="number" id="quantity" min="1" max="20" required>
+        
+        <button type="submit">Сгенерировать</button>
+    </form>
+    <div id="passwords"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
